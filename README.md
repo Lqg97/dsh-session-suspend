@@ -48,8 +48,10 @@ git clone https://github.com/Lqg97/dsh-session-suspend.git
 
 侧边栏的**工作区分组行**没有插件插槽（宿主只开放了 Session 行的菜单/悬停按钮），Host 也没有工作区级归档/收起状态，所以「挂起整个工作区」目前做不了。
 
-需要的槽位与状态已整理成需求文档，准备提交给上游：
-[`docs/workspace-row-slots-request.md`](docs/workspace-row-slots-request.md)（含接口草图、兼容性、验收标准）。
+需要的槽位与状态已整理成需求文档并提交给上游：
+
+- 上游讨论（DeepSeek Harness · Ideas）：https://github.com/deepseek-ai/deepseek-harness/discussions/11996
+- 需求文档：[`docs/workspace-row-slots-request.md`](docs/workspace-row-slots-request.md)（含接口草图、兼容性、验收标准）
 
 在宿主支持之前的临时替代：工作区分组本身可以点标题折叠（宿主原生能力）。
 
