@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Suspend",
+    "description": "Adds a suspend mode to the sidebar session list: fold idle sessions into a collapsed group at the sidebar foot and restore them there."
+  }
+}

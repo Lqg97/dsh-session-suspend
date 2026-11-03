@@ -1,0 +1,55 @@
+{
+  "name": "@local/dsh-session-suspend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 侧边栏会话挂起：把空闲会话收进底部「已挂起」折叠组，需要时再恢复回列表。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/*.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": "Lqg97",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lqg97/dsh-session-suspend.git"
+  },
+  "homepage": "https://github.com/Lqg97/dsh-session-suspend#readme",
+  "bugs": {
+    "url": "https://github.com/Lqg97/dsh-session-suspend/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "session",
+    "plugin"
+  ]
+}

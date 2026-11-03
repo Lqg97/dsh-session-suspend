@@ -1,0 +1,5 @@
+# 会话挂起：只有 Client 半身（侧边栏底座与 Session 行都在浏览器里），
+# Host 行只承担“让 bundle 可激活、把 Client 模块并入 web 模块图”这一件事。
+- insert:
+    - id: session-suspend
+      name: '@local/dsh-session-suspend'
